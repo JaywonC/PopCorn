@@ -1,4 +1,3 @@
-
 public class Main {
     public static void main (String args[]){
         MasterList popcorn2023 = new MasterList();
@@ -13,6 +12,11 @@ public class Main {
         System.out.println(popcorn2023.removeVariety("Butter Microwave"));
         System.out.println(popcorn2023.removeVariety("Kettle Corn"));
         MasterList popcorn2024 = new MasterList();
-        System.out.println(popcorn2024);
+        System.out.println(popcorn2024.getTotalOrders());
+        System.out.println(popcorn2024.removeVariety("Butter Microwave"));
+        System.out.println(popcorn2024.removeVariety("Sea Salt Splash"));
+        System.out.println(popcorn2024.removeVariety("Kettle Corn"));
+
+        popcorn2024.toString();
     }
 }
