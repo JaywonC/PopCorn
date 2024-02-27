@@ -16,11 +16,11 @@ public class MasterList {
         }
         return num;
     }
-    public int removeVariety (String s){
+    public int removeVariety(String s) {
         int count = 0;
-        for (int i = orders.size(); i>= 0; i--){
+        for (int i = orders.size() - 1; i >= 0; i--) {
             PopcornOrder yes = orders.get(i);
-            if (yes.getVariety().equals(s)){
+            if (yes.getVariety().equals(s)) {
                 count = count + yes.getNumOrdered();
                 orders.remove(i);
             }
